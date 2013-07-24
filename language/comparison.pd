@@ -1,0 +1,17 @@
+#N canvas 586 420 450 300 10;
+#X floatatom 124 39 5 0 0 0 - - -;
+#X floatatom 180 39 5 0 0 0 - - -;
+#X obj 65 104 ==;
+#X obj 105 104 !=;
+#X obj 143 104 >;
+#X obj 183 104 <;
+#X obj 220 104 >=;
+#X obj 257 104 <=;
+#X obj 65 167 print;
+#X obj 124 11 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 144 9 check again;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 8 0;
+#X connect 9 0 0 0;

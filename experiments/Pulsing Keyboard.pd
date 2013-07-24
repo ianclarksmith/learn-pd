@@ -1,0 +1,35 @@
+#N canvas 712 22 950 737 10;
+#X obj 312 188 realtime;
+#X obj 284 384 apple/keyboard_light;
+#X msg 250 316 bang;
+#X obj 315 333 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -257985
+-1 -1 5779 1;
+#X floatatom 312 290 10 0 0 0 - - -;
+#X obj 312 221 / 1000;
+#X obj 357 157 metro 60;
+#X obj 357 129 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 312 265 abs;
+#X obj 286 516 osc~;
+#X obj 296 423 * 880;
+#X obj 292 566 dac~;
+#X obj 312 243 sin;
+#X obj 393 447 random 440;
+#X obj 351 479 +;
+#X obj 441 407 metro 100;
+#X connect 0 0 5 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
+#X connect 4 0 10 0;
+#X connect 5 0 12 0;
+#X connect 6 0 0 1;
+#X connect 7 0 6 0;
+#X connect 8 0 4 0;
+#X connect 9 0 11 0;
+#X connect 9 0 11 1;
+#X connect 10 0 14 0;
+#X connect 12 0 8 0;
+#X connect 13 0 14 1;
+#X connect 14 0 9 0;
+#X connect 15 0 13 0;
